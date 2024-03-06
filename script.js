@@ -14,4 +14,9 @@ function calculate() {
   } catch (error) {
     document.getElementById('result').value = 'Error';
   }
+function deleteLastCharacter() {
+  let currentValue = document.getElementById('result').value;
+  document.getElementById('result').value = currentValue.slice(0, -1);
+  }
 }
+
